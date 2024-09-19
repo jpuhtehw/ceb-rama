@@ -163,43 +163,43 @@
                 staffDiv.className = 'Page-Staffs';
                 staffDiv.innerHTML = `
                     <div class="Image-CurveII">
-                        <img alt="alt" src="${imageUrl}" title="title" />
+                        <img alt="alt" src="${imageUrl || ''}" title="title" />
                     </div>
                     <div class="Page-Staffs-Details">
-                        <div class="Page-Staffs-Name">${name}</div>
+                        <div class="Page-Staffs-Name">${name || ''}</div>
                         <hr class="hr-style">
                         <table class="table-section">
                             <tr>
                                 <td class="title"><u>Academic year</u> :</td>
-                                <td>${year}</td>
+                                <td>${year || ''}</td>
                             </tr>
                             <tr>
                                 <td class="title"><u>Program</u> :</td>
-                                <td>${program}</td>
+                                <td>${program || ''}</td>
                             </tr>
                             <tr>
                                 <td class="title"><u>Email</u> :</td>
-                                <td>${email}</td>
+                                <td>${email || ''}</td>
                             </tr>
                             <tr>
                                 <td class="title"><u>Position</u> :</td>
-                                <td>${position}</td>
+                                <td>${position || ''}</td>
                             </tr>
                             <tr>
                                 <td class="title"><u>Specialty</u> :</td>
-                                <td>${specialty}</td>
+                                <td>${specialty || ''}</td>
                             </tr>
                             <tr>
                                 <td class="title"><u>Place of work</u> :</td>
-                                <td>${workPlace}</td>
+                                <td>${workPlace || ''}</td>
                             </tr>
                             <tr>
                                 <td class="title"><u>Thesis</u> :</td>
-                                <td>${thesis}</td>
+                                <td>${thesis || ''}</td>
                             </tr>
                             <tr>
                                 <td class="title"><u>Major Advisor</u> :</td>
-                                <td>${majorAdvisor}</td>
+                                <td>${majorAdvisor || ''}</td>
                             </tr>
                             <tr>
                                 <td class="title"><u>Co-Advisor</u> :</td>
@@ -212,7 +212,7 @@
                             </tr>
                             <tr>
                                 <td class="title"><u>Areas of interest</u> :</td>
-                                <td>${interests}</td>
+                                <td>${interests || ''}</td>
                             </tr>
                         </table>
                     </div>
