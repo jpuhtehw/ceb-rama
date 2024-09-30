@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        /* Custom accordion style with a white border */
+        .accordion {
+            background-color: #22717C;
+            color: #fff;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: 2px solid white;  /* Adding a white border */
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            box-sizing: border-box; /* Ensures padding is inside the border */
+        }
+
+        .active, .accordion:hover {
+            background-color: #1a5a64; /* Darker shade on hover/active */
+        }
+
+        .accordion:after {
+            content: '\002B'; /* Plus sign */
+            color: #fff;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212"; /* Minus sign */
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+        /* Table styling for better appearance */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #22717C;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Padding and margin for visual spacing */
+        p, ul {
+            margin-bottom: 15px;
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var accordions = document.getElementsByClassName("accordion");
+            
+            for (var i = 0; i < accordions.length; i++) {
+                accordions[i].addEventListener("click", function() {
+                    // Toggle between adding/removing the "active" class
+                    this.classList.toggle("active");
+
+                    // Toggle between hiding and showing the panel
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+
+<!-- Custom accordion -->
+<button class="accordion">Doctor of Philosophy Program in Data Science for Healthcare and Clinical Informatics (International Program)</button>
+<div class="panel">
+    <!-- Content omitted for brevity -->
+  <p><strong>1. Program Title</strong></p>
+  <p>Doctor of Philosophy Program in Data Science for Healthcare and Clinical Informatics (International Program)</p>
+  <p><strong>2. Name of Degree</strong></p>
+  <ol>
+    <li>Full name: Doctor of Philosophy (Data Science for Healthcare and Clinical Informatics)</li>
+    <li>Abbreviation: Ph.D. (Data Science for Healthcare and Clinical Informatics)</li>
+  </ol>
+  <p><strong>3. Responsible Unit</strong></p>
+  <ol>
+    <li>Department of Clinical Epidemiology &amp; Biostatistics, Research Centre, Faculty of Medicine, Ramathibodi Hospital, Mahidol University</li>
+    <li>Faculty of Graduate Studies, Mahidol University</li>
+  </ol>
+  <p><strong>4. The Program&rsquo;s Philosophy and Objectives</strong></p>
+  <p><em>Program Philosophy</em></p>
+  <p>The Doctor of Philosophy Program in Data Science for Healthcare and Clinical Informatics (International Program), Faculty of Medicine Ramathibodi Hospital, Mahidol University aims to build up health professionals (e.g., physicians, pharmacists, dentists, nurses, etc.) and technology professionals (e.g., health informaticians, computer scientists, data scientists, etc.) who are able to process and generate knowledge in related areas including big data, clinical informatics and clinical information systems, data analytics, data visualization, machine Learning, and health research applied to the healthcare system. In addition, graduates should be able to ethically produce good-quality research that can answer health problems of our country and internationally.</p>
+  <p><em>Program Objectives</em></p>
+  <ol>
+    <li>Have a good morality and ethics in applying data science and clinical informatics.</li>
+    <li>Integrate knowledge of data science for healthcare and clinical informatics in big data processing and analytics as well as design and management of clinical information systems.</li>
+    <li>Conduct advanced data science and clinical informatics research related to health problems and effectively disseminate research results.</li>
+    <li>Build up capacity to lead a data science and clinical informatics team with a high sense of social responsibility.</li>
+    <li>Integrate mathematical analysis, logical thinking, and information technology and communication skills to management of the healthcare system.</li>
+  </ol>
+  <p><strong>5. Qualifications of Prospective Students</strong></p>
+  <p><em>Plan 1 (1.1): Research Only (for Students with a Master&rsquo;s Degree)</em></p>
+  <ol>
+    <li>Graduated with a Master&rsquo;s degree in Data Science for Healthcare and Clinical Informatics or a closely-related discipline from an accredited national or international academic institution recognized and attested by the Higher Education Commission</li>
+    <li>Grade point average not less than 3.50</li>
+    <li>Have an English Proficiency Examination score meeting the requirements of the Faculty of Graduate Studies</li>
+    <li>Work or have experience as an instructor or researcher in data sciences or clinical Informatics or closely relevant fields for at least three years</li>
+    <li>Have at least 3 publications in peer-reviewed international journals within the last 5 years, as the first or corresponding author</li>
+    <li>Exemptions from the above conditions may be granted by the Program Committee and the Dean of the Faculty of Graduate Studies under exceptional circumstances.</li>
+  </ol>
+  <p><em>Plan 2: 2.2 Coursework and Research (for Students with a Bachelor&rsquo;s Degree)</em></p>
+  <ol>
+    <li>Graduated with a doctor of medicine/dentistry/pharmacy/nursing degree or graduated with a bachelor&rsquo;s degree in health sciences, information science, mathematics/statistics, engineering, management science, social science, or an IT-related discipline from an accredited national or international academic institution recognized and attested by the Higher Education Commission</li>
+    <li>Grade point average not less than 3.50</li>
+    <li>Have an English Proficiency Examination score meeting the requirements of the Faculty of Graduate Studies</li>
+    <li>Exemptions from the above conditions may be granted by the Program Committee and the Dean of the Faculty of Graduate Studies under exceptional circumstances.</li>
+  </ol>
+  <p><strong>6. Application Procedure:</strong></p>
+  <p>This is the application procedure:</p>
+  <p>(1) Please send e-copies of the following:</p>
+  <p>· Your curriculum vitae,</p>
+  <p>· Your academic certificates and transcripts,</p>
+  <p>· Copies of certificates of international examinations in English IELTS Academic 6.0 (writing and speaking no less than 6.0) <strong><u>or</u></strong> TOEFL-IBT 79 (writing no less than 23 and speaking no less than 19) <strong><u>or</u></strong> MU GRAD PLUS 90 (writing and speaking no less than 12) which you have taken,</p>
+  <p>· Brief outline of your proposed research, it is highly recommended to use our template: <a href="https://med.mahidol.ac.th/ceb/sites/default/files/public/doc/Templates/Research%20Outline.doc" target="_blank"><img alt="" src="https://med.mahidol.ac.th/ceb/sites/default/files/public/img/icon/doc.png" title="Research Outline"></a></p>
+  <p>· At least two reference letters,</p>
+  <p>· Details of any publications in international journals in <u><strong>English,</strong></u></p>
+  <p>· Details of any research experience which you have.</p>
+  <p>There is no need to submit all prerequisite documents at once. However, should any applicant have alternative documents which are not aligned with the requirements above. Please let us know.</p>
+  <p><strong>7. Selection Method</strong></p>
+  <p>This is the process:</p>
+  <p>1) Selection committee review applicant's information.</p>
+  <p>2) Selection committee select applicants for interview.</p>
+  <p>3) Interview in person or by Skype/ZOOM.</p>
+  <p>4) Notification of result</p>
+  <p>· Accept / Accept with conditions: Applicant receives a formal acceptance from the Faculty of Graduate Studies which they accept or deny.</p>
+  <p>· Pending: Applicant is still under consideration and a decision will informed as soon as possible.</p>
+  <p>· Reject: Applicant is not accepted at this time, but my re-apply in the future.</p>
+  <p><strong>8. Educational Management System</strong></p>
+  <p>System: The educational system is of the Semester Credit type. One Academic Year consists of 2 Regular Semesters, each with not less than 15 weeks of study.</p>
+  <p>Summer Session: There is a 6 week Summer Semester in year 1 or as considered by the Curriculum Administration Committee.</p>
+  <p><strong>9. Language</strong></p>
+  <p>English will be used for instruction, written assignments, as well as the writing of dissertation and manuscript.</p>
+  <p><strong>10. Duration of Study</strong></p>
+  <p>Plan 1.1: Completion of study must take no more than 5 academic years.<br>
+    Plan 2.2: Completion of study must take no more than 8 academic years.</p>
+  <p><strong>11. Evaluation and Graduation Requirements</strong></p>
+  <p><em>Evaluation</em></p>
+  <p>Student evaluations are in accordance with the rules and regulations of Mahidol University. (See details: <a href="http://www.grad.mahidol.ac.th/" target="_blank">www.grad.mahidol.ac.th</a>)</p>
+  <p><em>Graduation Requirements (See details:</em> <a href="http://www.grad.mahidol.ac.th/en/prospective-students/general-information.php" target="_blank">http://www.grad.mahidol.ac.th/en/prospective-students/general-information.php</a>)</p>
+  <p>Fees: <a href="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/pdf/ACADEMIC/2022/Tution%20fee%20for%20Ph.D.DSCI%202023%20%285%20Years%29.pdf" target="_blank"><img alt="" src="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/img/icon/pdf.png"></a></p>
+</div>
+
+<button class="accordion">Ph.D. Course Offerings and Requirements</button>
+<div class="panel">
+    <!-- Content omitted for brevity -->
+  <p><strong><u>Required Courses</u></strong></p>
+  <p> </p>
+  <p><strong>RADI 607 Theories in Health Informatics and Health Information Technology                                                                            3 (3-0-6)</strong></p>
+  <p>The health informatics discipline; principles of health information technology application in healthcare; clinical information systems and electronic health records; theories and application of clinical decision support systems; theories on user acceptance of technology and health information technology adoption; theories on change management, project management, unintended consequences of health information technology, and information technology management; information technology infrastructure; software development processes; health information privacy and security; consumer health informatics and mobile health; ethics and law in health informatics; health information exchange; health information standards and interoperability; public policy in health informatics and global health informatics; case study analyses in health informatics and health information technology</p>
+  <p> </p>
+  <p><strong>RADI 608 Data Mining and Machine Learning                                                                                                                                 3 (2-2-5)</strong></p>
+  <p>Traditional machine learning techniques applied to healthcare problems; data preprocessing, feature engineering, modeling, evaluation, and deployment; extracting knowledge from various types of data using data mining techniques</p>
+  <p> </p>
+  <p><strong>RADI 603 Medical Statistics and Programming for Data Science and Clinical Informatics                                                       2 (1-2-3)</strong></p>
+  <p>Calculus; the probability theory; matrices and vectors; linear algebra; basic python programming; basic R programming; the Structured Query Language</p>
+  <p> </p>
+  <p><strong>RADI 604 Principles and Concepts of Health Systems                                                                                                                 2 (2-0-4)</strong></p>
+  <p>Principles and concepts of health policy formulation; advocacy; decision-making; implementation; monitoring and evaluation; systematic assessment of the health policy process; applications of social sciences theories; principles and concepts of health systems; building blocks of health systems; desirable characteristics and goals of health systems; systematic approaches to demand and supply analysis of health services delivery; social determinants of health and health promotion; fundamental concepts of healthcare reforms</p>
+  <p> </p>
+  <p><strong>RADI 605 Modern Machine Learning                                                                                                                                              2 (1-2-3)</strong></p>
+  <p>The in-depth coverage of machine learning algorithms; statistical objectives of the prediction; classification and clustering; data validation; cluster analysis; establishing predictive and classification models; using machine learning applications in the health analytics; python programming for modern machine learning</p>
+  <p> </p>
+  <p><strong>RADI 606 Information Technology Management in Healthcare Organizations                                                                          2 (2-0-4)</strong></p>
+  <p>Organizational behavior management and the health systems science; strategic management and business-information technology alignment; leadership and teamwork; patient safety and quality improvement; organizational change management; information technology acceptance and adoption; information technology governance; enterprise architecture; information technology project management; information technology risk management; information technology service management; innovation management; case study analyses in information technology management</p>
+  <p> </p>
+  <p><strong>RADI 609 Research Methods in Data Science and Clinical Informatics                                                                                     2 (2-0-4)</strong></p>
+  <p>Research proposal writing; literature review; formulating research questions; a selection of data sources; features; measurement; data preprocessing, data analysis planning; research proposal presentations; data visualization; moral and ethics in research</p>
+  <p> </p>
+  <p><strong>RADI 610 Seminar in Data Science and Clinical Informatics Research                                                                                     2 (2-0-4)</strong></p>
+  <p>Advances in data science and clinical informatics research; applying knowledge of data science and clinical informatics to real practice; knowledge communication skills in data science and clinical informatics; moral and ethics in data science and clinical informatics; critical appraisals of previous studies and presentations</p>
+  <p> </p>
+  <p><strong><u>Elective Courses</u></strong></p>
+  <p> </p>
+  <p><strong>RADI 620 Unstructured Data Processing                                                                                                                                      2 (1-2-3)</strong></p>
+  <p>Essential analytics and programming skills for modern data scientists; applied techniques in real-world setting; understanding various decision-making support techniques</p>
+  <p> </p>
+  <p><strong>RADI 621 Business Intelligence Systems                                                                                                                                     2 (1-2-3)</strong></p>
+  <p>Principles of business intelligence systems; data collection and turning data into business values; understanding the data organization; processes and techniques used in extracting, transforming, and loading data; designing the structure of data cubes; building analytics dashboards from business intelligence systems</p>
+  <p> </p>
+  <p><strong>RADI 622 Medical Image Processing                                                                                                                                             2 (1-2-3)</strong></p>
+  <p>Knowledge and programming practice of medical imaging modalities; methods of medical image processing; segmentation techniques; volume rendering; 3D object reconstruction; rigid and deformable registration techniques</p>
+  <p> </p>
+  <p><strong>RADI 623 Natural Language Processing                                                                                                                                       2 (1-2-3)</strong></p>
+  <p>Programming for natural language processing; language modeling; speech tagging and sequence labeling; syntactic parsing; the semantic analyses; the information extraction; the machine translation</p>
+  <p> </p>
+  <p><strong>RADI 624 Signal Processing                                                                                                                                                           2 (1-2-3)</strong></p>
+  <p>Theories and programming practice of representation, transformation, and manipulation of signals in machine readable formats; applying related algorithms to signal processing tasks</p>
+  <p> </p>
+  <p><strong>RADI 625 Data Modeling and Visualization                                                                                                                                   2 (1-2-3)</strong></p>
+  <p>Conceptual models of visualization software; principles and value of visualization; quantitative data visualization; qualitative data visualization; the interactive model and animation</p>
+  <p> </p>
+  <p><strong>RADI 630 Health Information Privacy and Security                                                                                                                      2 (2-0-4)</strong></p>
+  <p>The information technology infrastructure; principles of information privacy and security; systems security; network security; cryptography; health information privacy and security laws; current situations and trends in information privacy and security; case study analyses in information privacy and security</p>
+  <p> </p>
+  <p><strong>RADI 631 Operations Management in Healthcare                                                                                                                         2 (2-0-4)</strong></p>
+  <p>An overview of operations management; the process flow; inventory analysis; managing process variability; application of operations management in healthcare</p>
+  <p> </p>
+  <p><strong>RADI 632 Information System Development and Management                                                                                                   2 (2-0-4)</strong></p>
+  <p>An overview of the software life cycle and the software development process; requirements analysis; systems design; software testing; agile development; practice in information system development and management</p>
+  <p> </p>
+  <p><strong>RADI 633 Public Policy and Laws in Health Informatics                                                                                                              2 (2-0-4)</strong></p>
+  <p>Public health informatics and public policy; legal systems and basic legal concepts; governance of health information technology in various countries; public policy and laws promoting health information technology governance and adoption; health information privacy and security laws; case study analyses and legal analyses in health informatics</p>
+  <p> </p>
+  <p><strong>RADI 634 Health Information Standards and Interoperability                                                                                                      2 (2-0-4)</strong></p>
+  <p>Principles of health information standards and interoperability; the standards development process; terminologies, vocabularies, coding systems, and ontologies; standards in pharmacy; standards for laboratory investigations; standards for medical imaging; standards for diagnoses and clinical documentation; exchange standards; integration of various health information standards</p>
+  <p> </p>
+  <p><strong>RADI 641 Innovations in Health Information Technology                                                                                                             2 (2-0-4)</strong></p>
+  <p>Information technology innovations relevant to planning and improvement of the healthcare; clinical decision support systems; advanced tools for patients monitoring and self-care; use of electronic health records (EHRs); e-commerce and the application of current technology in healthcare; factors impacting healthcare innovations</p>
+  <p> </p>
+  <p><strong>RADI 642 Health Policy Analysis                                                                                                                                                     2 (2-0-4)</strong></p>
+  <p>A new paradigm of health promotion; the process to change people&rsquo;s risky behaviors; health promotion for disease control and prevention; policy advocacy for healthy public policy; effectiveness and efficiency of health promotion interventions; concepts of health promotion evaluation</p>
+  <p> </p>
+  <p><strong>RADI 643 Clinical Decision Support and Artificial Intelligence in Healthcare                                                                             2 (2-0-4)</strong></p>
+  <p>Clinical decision making, principles of clinical decision support systems; applications of clinical decision support systems and artificial intelligence, design and maintenance of clinical decision support systems; data issues in clinical decision support systems, medical knowledge generation; integration of evidence based medicine, unintended consequences of clinical decision support systems; case study analyses in clinical decision support</p>
+</div>
+
+<button class="accordion">Master of Science Program in Data Science for Healthcare and Clinical Informatics (International Program)</button>
+<div class="panel">
+    <!-- Content omitted for brevity -->
+  <p><strong>1. Program Title</strong></p>
+    <p>Master of Science Program in Medical Epidemiology</p>
+    <p><strong>2. Name of Degree</strong></p>
+    <p>a.    Full name: Master of Science (Medical Epidemiology)</p>
+    <p>b.    Abbreviation: M.Sc. (Medical Epidemiology)</p>
+    <p><strong>3. Responsible Unit</strong></p>
+    <p>a.    Department of Clinical Epidemiology and Biostatistics, Research Centre, Faculty of Medicine, Ramathibodi Hospital, Mahidol University</p>
+    <p>b.    Faculty of Graduate Studies, Mahidol University</p>
+    <p><strong>4. The Program&rsquo;s Philosophy and Objectives</strong></p>
+    <p><em>Program Philosophy</em></p>
+    <p>The Master of Science program in Medical Epidemiology will prepare students to integrate medical epidemiology, biostatistics, medical economics, and medical research with patient care. The Program will focus on a critical evaluation of diagnostics, prevention and management, which are the basic principles of evidence-based medicine. It will provide students with a broad perspective and advanced skills for in-depth exploration of research methodology. Students will be challenged to create innovative research and evaluation methods, which will lead to not only an improved understanding of health and disease, but ultimately toward an overall contribution to enhanced health service systems as well.</p>
+    <p><em>Program Objectives</em></p>
+    <p>a.     Appropriately teach, advise and disseminate the principles of Medical Epidemiology while enthusiastically aspiring to help in the reduction of the world disease burden.</p>
+    <p>b.    Encourage and effectively integrate Medical Epidemiology and Evidence-based Medicine into the everyday practice of individual patient care as well as the broader based health care systems.</p>
+    <p>c.    Produce good medical research using Medical Epidemiology tools, while further advancing ongoing medical education of the highest ethical standards in Medical Epidemiology.</p>
+    <p><strong>5. Admission Requirements</strong></p>
+    <ul>
+      <li>
+        <p>Candidate must hold an undergraduate degree in medicine or in a similar health care field.</p>
+      </li>
+    </ul>
+    <p> (Exceptions to these requirements will be made by the Program Committee and the Dean of the Faculty of Graduate Studies.)</p>
+    <p><strong>6. Application Procedure:</strong></p>
+    <p>This is the application procedure:</p>
+    <p>1) Please send us e-copies of the following:</p>
+    <ul>
+      <li>
+        <p>Your curriculum vitae (CV),</p>
+      </li>
+      <li>
+        <p>Your academic certificates and transcripts,</p>
+      </li>
+      <li>
+        <p>Copies of certificates of international examinations in English IELTS Academic 5.0 (writing and speaking no less than 5.0) <strong><u>or</u></strong> TOEFL-IBT 64 (writing no less than 17 and speaking no less than 15) <strong><u>or</u></strong> MU GRAD PLUS 70 (writing no less than 10 and speaking no less than 10) which you have taken,</p>
+      </li>
+      <li>
+        <p>Brief outline of your proposed research, it is highly recommended to use our template: <a href="https://med.mahidol.ac.th/ceb/sites/default/files/public/doc/Templates/Research%20Outline.doc" target="_blank"><img alt="" src="https://med.mahidol.ac.th/ceb/sites/default/files/public/img/icon/doc.png" title="Research Outline"></a></p>
+      </li>
+      <li>
+        <p>At least two reference letters</p>
+      </li>
+      <li>
+        <p>Details of any publications in international journals in English</p>
+      </li>
+      <li>
+        <p>Details of any research experience which you have</p>
+      </li>
+    </ul>
+    <p>There is no need to submit all prerequisite documents at once. However, should any applicant have alternative documents which are not aligned with the requirements above. Please let us know.</p>
+    <p>2) Please go to the Faculty of Graduate Studies website <a href="http://www.grad.mahidol.ac.th/en/prospective-students/" target="_blank">http://www.grad.mahidol.ac.th/en/</a> to read general information about application and then go to <a href="http://www.grad.mahidol.ac.th/en/prospective-students/view.php?id=2224D02G" target="_blank">http://www.grad.mahidol.ac.th/en/prospective-students/view.php?id=5901MG</a> to read about our program and then proceed to online application  <a href="http://www.grad.mahidol.ac.th/grad/admission/online/index_EN/page.php?page=apply/applyDetail.php&&tab=3" target="_blank">http://www.grad.mahidol.ac.th/en/prospective-students/</a> for which you will need to send <u><strong>hard copies</strong></u> to the Faculty of Graduate Studies. Please apply on-line as soon as possible. There will be a small fee (<u><strong>500 THB</strong></u>) for application (<u><strong>Non-refundable</strong></u>). Please be careful to choose our program during application - International M.Sc. in Medical Epidemiology at the Faculty of Medicine Ramathibodi Hospital program code 5901M01G. Kindly inform us promptly should you experience any problems with the online application process. </p>
+    <p>3) After the department reviews your documents and should he/she be selected for the next stage. The department will arrange interview <u><strong>in person for local applicants</strong></u> or <u><strong>through Skype or ZOOM for international applicants</strong></u>.</p>
+    <p><strong>7. Selection Method</strong></p>
+    <p>This is the process:</p>
+    <p>1) Selection committee review applicant's information.</p>
+    <p>2) Selection committee select applicants for interview.</p>
+    <p>3) Interview in person or by Skype/Zoom.</p>
+    <p>4) Notification of result</p>
+    <ul>
+      <li>
+        <p>Accept / Accept with conditions: Applicant receives a formal acceptance from the Faculty of Graduate Studies which they accept or deny.</p>
+      </li>
+      <li>
+        <p>Pending: Applicant is still under consideration and a decision will informed as soon as possible.</p>
+      </li>
+      <li>
+        <p>Reject: Applicant is not accepted at this time, but may re-apply in the future.</p>
+      </li>
+    </ul>
+    <p><strong>8. Academic System</strong></p>
+    <p>Semester system</p>
+    <p><em>Academic credits:</em></p>
+    <p>The number of academic credits assigned to each subject is as follows:</p>
+    <ul>
+      <li>
+        <p>Lecture or discussion periods totaling 15 hours per semester - 1 Credit</p>
+      </li>
+      <li>
+        <p>Laboratory or practice periods totaling 30 hours per semester - 1 Credit</p>
+      </li>
+      <li>
+        <p>Dissertation preparation totaling 45 hours per semester - 1 credit.</p>
+      </li>
+    </ul>
+    <p><strong>9. Language</strong></p>
+    <p>English will be used for instruction, written assignments, as well as the writing of dissertation and manuscript.</p>
+    <p><strong>10. Duration of Study</strong></p>
+    <p>Completion of study must take no more than 5 academic years.<br>
+    </p>
+    <p><strong>11. Registration</strong></p>
+    <ul>
+      <li>
+        <p>Candidates are enrolled to the following:</p>
+        <ul>
+          <li>
+            <p>Coursework which takes about one year full time</p>
+          </li>
+          <li>
+            <p>Research study which requires two to three days full time per week throughout </p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p><strong>12. Evaluation and Graduation Requirements</strong></p>
+    <p><em>Evaluation</em></p>
+    <p>Student evaluations are in accordance with the rules and regulations of Mahidol University. (See details: <a href="http://www.grad.mahidol.ac.th/" target="_blank">www.grad.mahidol.ac.th</a>)</p>
+    <p><em>Graduation Requirements (See details </em><a href="http://www.grad.mahidol.ac.th/en/prospective-students/general-information.php" target="_blank">http://www.grad.mahidol.ac.th/en/prospective-students/general-information.php</a>)</p>
+    <p>Students must meet the following requirements:</p>
+    <ul>
+      <li>
+        <p>Pass an English proficiency Examination.</p>
+      </li>
+      <li>
+        <p>Complete course work with at least 24 credits with GPA not less than 3.00.</p>
+      </li>
+      <li>
+        <p>Complete a written dissertation and pass the oral defense required for graduation according to the regulations of the Faculty of Graduate Studies, Mahidol University.</p>
+      </li>
+      <li>
+        <p>Publish at least one manuscripts related to his or her dissertation in an internationally peer-reviewed journal</p>
+      </li>
+    </ul>
+    <p><strong>13. Scholarships</strong></p>
+    <p>Currently we have had World Health Organisation and Mahidol Norway Capacity Building for ASEAN scholarhips students on our program. Students wishing to join our program with a scholarship should complete the application process above first, and if successful, obtain a offer of acceptance. Then potential scholarship students should apply for scholarships. Funding organisations are more likely to award scholarships to students who have shown their ability by already passing the application process. Within Mahidol University the Faculty of Graduate Studies have <a href="http://www.grad.mahidol.ac.th/en/scholarships/">scholarships</a> for both new entry students and students who have already passed coursework and qualifying examination and are ready to conduct research. (See details: <a href="http://www.grad.mahidol.ac.th/en/scholarships/">http://www.grad.mahidol.ac.th/en/scholarships/</a>) Some scholarships are full scholarships and some are partial scholarships according to the funding organisation. Potential scholarship students should note that scholarships after announcement have a short application period, so students desiring scholarships should respond quickly.   </p>
+    <p>M.Sc Fees :  <a href="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/pdf/ACADEMIC/2024/Tution%20fee%20for%20M.Sc.Epi%202024%2021-8-24.pdf" target="_blank"><img alt="" src="https://med.mahidol.ac.th/ceb/sites/default/files/public/img/icon/pdf.png" title="M.Sc. Fees 2024"></a></p>
+</div>
+
+<button class="accordion">M.Sc. Course Offerings and Requirements</button>
+<div class="panel">
+    <!-- Content omitted for brevity -->
+  <p><strong><u>Required Courses</u></strong></p>
+  <p> </p>
+  <p><strong>RADI 601 Health Informatics and Health Information Technology                                                                                                2 (2-0-4)</strong></p>
+  <p>The health informatics discipline; principles of health information technology application in healthcare; clinical information systems and electronic health records; information technology management in healthcare organizations; information technology infrastructure; software development processes; health information privacy and security; consumer health informatics and mobile health; health information exchange; health information standards and interoperability; public policy in health informatics; case study analyses in health informatics and health information technology</p>
+  <p> </p>
+  <p><strong>RADI 602 Data Mining and Knowledge Discovery                                                                                                                           2 (1-2-3)</strong></p>
+  <p>Concepts and programming practice in knowledge discovery for structured data using data mining methods: classification, clustering, regression, and association analysis; data preprocessing, data transformation, modeling, and evaluation to solve healthcare problems</p>
+  <p> </p>
+  <p><strong>RADI 603 Medical Statistics and Programming for Data Science and Clinical Informatics                                                         2 (1-2-3)</strong></p>
+  <p>Calculus; the probability theory; matrices and vectors; linear algebra; basic python programming; basic R programming; the Structured Query Language</p>
+  <p> </p>
+  <p><strong>RADI 604 Principles and Concepts of Health Systems                                                                                                                    2 (2-0-4)</strong></p>
+  <p>Principles and concepts of health policy formulation; advocacy; decision-making; implementation; monitoring and evaluation; systematic assessment of the health policy process; applications of social sciences theories; principles and concepts of health systems; building blocks of health systems; desirable characteristics and goals of health systems; systematic approaches to demand and supply analysis of health services delivery; social determinants of health and health promotion; fundamental concepts of healthcare reforms</p>
+  <p> </p>
+  <p><strong>RADI 605 Modern Machine Learning                                                                                                                                                  2 (1-2-3)</strong></p>
+  <p>The in-depth coverage of machine learning algorithms; statistical objectives of the prediction; classification and clustering; data validation; cluster analysis; establishing predictive and classification models; using machine learning applications in the health analytics; python programming for modern machine learning</p>
+  <p> </p>
+  <p><strong>RADI 606 Information Technology Management in Healthcare Organizations                                                                               2 (2-0-4)</strong></p>
+  <p>Organizational behavior management and the health systems science; strategic management and business-information technology alignment; leadership and teamwork; patient safety and quality improvement; organizational change management; information technology acceptance and adoption; information technology governance; enterprise architecture; information technology project management; information technology risk management; information technology service management; innovation management; case study analyses in information technology management</p>
+  <p> </p>
+  <p><strong>RADI 609 Research Methods in Data Science and Clinical Informatics                                                                                          2 (2-0-4)</strong></p>
+  <p>Research proposal writing; literature review; formulating research questions; a selection of data sources; features; measurement; data preprocessing, data analysis planning; research proposal presentations; data visualization; moral and ethics in research</p>
+  <p> </p>
+  <p><strong>RADI 610 Seminar in Data Science and Clinical Informatics Research                                                                                          2 (2-0-4)</strong></p>
+  <p>Advances in data science and clinical informatics research; applying knowledge of data science and clinical informatics to real practice; knowledge communication skills in data science and clinical informatics; moral and ethics in data science and clinical informatics; critical appraisals of previous studies and presentations</p>
+  <p> </p>
+  <p><strong><u>Elective Courses</u></strong></p>
+  <p> </p>
+  <p><strong>RADI 620 Unstructured Data Processing                                                                                                                                           2 (1-2-3)</strong></p>
+  <p>Essential analytics and programming skills for modern data scientists; applied techniques in real-world setting; understanding various decision-making support techniques</p>
+  <p> </p>
+  <p><strong>RADI 621 Business Intelligence Systems                                                                                                                                          2 (1-2-3)</strong></p>
+  <p>Principles of business intelligence systems; data collection and turning data into business values; understanding the data organization; processes and techniques used in extracting, transforming, and loading data; designing the structure of data cubes; building analytics dashboards from business intelligence systems</p>
+  <p> </p>
+  <p><strong>RADI 622 Medical Image Processing                                                                                                                                                  2 (1-2-3)</strong></p>
+  <p>Knowledge and programming practice of medical imaging modalities; methods of medical image processing; segmentation techniques; volume rendering; 3D object reconstruction; rigid and deformable registration techniques</p>
+  <p> </p>
+  <p><strong>RADI 623 Natural Language Processing                                                                                                                                            2 (1-2-3)</strong></p>
+  <p>Programming for natural language processing; language modeling; speech tagging and sequence labeling; syntactic parsing; the semantic analyses; the information extraction; the machine translation</p>
+  <p> </p>
+  <p><strong>RADI 624 Signal Processing                                                                                                                                                                2 (1-2-3)</strong></p>
+  <p>Theories and programming practice of representation, transformation, and manipulation of signals in machine readable formats; applying related algorithms to signal processing tasks</p>
+  <p> </p>
+  <p><strong>RADI 630 Health Information Privacy and Security                                                                                                                           2 (2-0-4)</strong></p>
+  <p>The information technology infrastructure; principles of information privacy and security; systems security; network security; cryptography; health information privacy and security laws; current situations and trends in information privacy and security; case study analyses in information privacy and security</p>
+  <p> </p>
+  <p><strong>RADI 631 Operations Management in Healthcare                                                                                                                              2 (2-0-4)</strong></p>
+  <p>An overview of operations management; the process flow; inventory analysis; managing process variability; application of operations management in healthcare</p>
+  <p> </p>
+  <p><strong>RADI 632 Information System Development and Management                                                                                                        2 (2-0-4)</strong></p>
+  <p>An overview of the software life cycle and the software development process; requirements analysis; systems design; software testing; agile development; practice in information system development and management</p>
+  <p> </p>
+  <p><strong>RADI 633 Public Policy and Laws in Health Informatics                                                                                                                   2 (2-0-4)</strong></p>
+  <p>Public health informatics and public policy; legal systems and basic legal concepts; governance of health information technology in various countries; public policy and laws promoting health information technology governance and adoption; health information privacy and security laws; case study analyses and legal analyses in health informatics</p>
+  <p> </p>
+  <p><strong>RADI 634 Health Information Standards and Interoperability                                                                                                           2 (2-0-4)</strong></p>
+  <p>Principles of health information standards and interoperability; the standards development process; terminologies, vocabularies, coding systems, and ontologies; standards in pharmacy; standards for laboratory investigations; standards for medical imaging; standards for diagnoses and clinical documentation; exchange standards; integration of various health information standards</p>
+  <p> </p>
+  <p><strong>RADI 641 Innovations in Health Information Technology                                                                                                                  2 (2-0-4)</strong></p>
+  <p>Information technology innovations relevant to planning and improvement of the healthcare; clinical decision support systems; advanced tools for patients monitoring and self-care; use of electronic health records (EHRs); e-commerce and the application of current technology in healthcare; factors impacting healthcare innovations</p>
+  <p> </p>
+  <p><strong>RADI 642 Health Policy Analysis                                                                                                                                                          2 (2-0-4)</strong></p>
+  <p>A new paradigm of health promotion; the process to change people&rsquo;s risky behaviors; health promotion for disease control and prevention; policy advocacy for healthy public policy; effectiveness and efficiency of health promotion interventions; concepts of health promotion evaluation</p>
+  <p> </p>
+  <p><strong>RADI 643 Clinical Decision Support and Artificial Intelligence in Healthcare                                                                                  2 (2-0-4)</strong></p>
+  <p>Clinical decision making, principles of clinical decision support systems; applications of clinical decision support systems and artificial intelligence, design and maintenance of clinical decision support systems; data issues in clinical decision support systems, medical knowledge generation; integration of evidence based medicine, unintended consequences of clinical decision support systems; case study analyses in clinical decision support</p>
+</div>
+
+<button class="accordion">Course Overview</button>
+<div class="panel">
+  <h1><img alt="" src="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/img/phd/Data%20Science%20Course%20overview%202022_Page_1.jpg"></h1>
+  <p><img alt="" src="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/img/phd/Data%20Science%20Course%20overview%202022_Page_2.jpg"></p>
+  <p>&nbsp;</p>
+</div>
+
+<button class="accordion">Course timetable</button>
+<div class="panel">
+    <p><strong>Course timetable</strong></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Topic</th>
+                <th>Timetable</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>RADI 603: </strong>Medical Statistics and Programming for Data Science and Clinical Informatics</td>
+                <td><a href="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/pdf/ACADEMIC/2024/RADI603/RADI%20603_2024.pdf" target="_blank"><img alt="" src="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/img/icon/pdf.png"></a></td>
+            </tr>
+            <tr>
+                <td><strong>RADI 604: </strong>Principles and Concepts of Health Systems</td>
+                <td><a href="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/pdf/ACADEMIC/2024/RADI604/RADI%20604_2024_V2.pdf" target="_blank"><img alt="" src="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/img/icon/pdf.png"></a></td>
+            </tr>
+            <tr>
+                <td><strong>RADI 601: </strong>Health Informatics and Health Information Technology </td>
+                <td><a href="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/pdf/ACADEMIC/2024/RADI601/RADI%20601%2C%20607_2024.pdf" target="_blank"><img alt="" src="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/img/icon/pdf.png"></a></td>
+            </tr>
+            <tr>
+                <td><strong>RADI 608: </strong>Data Mining and Machine Learning</td>
+                <td><a href="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/pdf/ACADEMIC/2024/RADI608/RADI%20608_2024.pdf" target="_blank"><img alt="" src="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/img/icon/pdf.png"></a></td>
+            </tr>
+			<tr>
+                <td><strong>RADI 605: </strong>Modern Machine Learning   </td>
+                <td></td>
+            </tr>
+			<tr>
+                <td><strong>RADI 606: </strong>Information Technology Management in Healthcare Organizations</td>
+                <td></td>
+            </tr>
+			<tr>
+                <td><strong>RADI 623: </strong>Natural Language Processing</td>
+                <td></td>
+            </tr>
+			<tr>
+                <td><strong>RADI 643 </strong>Clinical Decision Support and Artificial Intelligence in Healthcare</td>
+                <td></td>
+            </tr>
+			<tr>
+                <td><strong>RADI 609: </strong>Research Methods in Data Science and Clinical Informatics </td>
+                <td></td>
+            </tr>
+			<tr>
+                <td><strong>RADI 630: </strong>Health Information Privacy and Security </td>
+                <td></td>
+            </tr>
+			<tr>
+                <td><strong>RADI 622: </strong>Medical Image Processing</td>
+                <td></td>
+            </tr>
+			<tr>
+                <td><strong>RADI 610: </strong>Seminar in Data Science and Clinical Informatics Research </td>
+                <td></td>
+            </tr>
+			<tr>
+                <td><strong>RADI 634: </strong>Health Information Standards and Interoperability</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
