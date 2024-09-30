@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        /* Custom accordion style with a white border */
+        .accordion {
+            background-color: #22717C;
+            color: #fff;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: 2px solid white;  /* Adding a white border */
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            box-sizing: border-box; /* Ensures padding is inside the border */
+        }
+
+        .active, .accordion:hover {
+            background-color: #1a5a64; /* Darker shade on hover/active */
+        }
+
+        .accordion:after {
+            content: '\002B'; /* Plus sign */
+            color: #fff;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212"; /* Minus sign */
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+        /* Table styling for better appearance */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #22717C;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Padding and margin for visual spacing */
+        p, ul {
+            margin-bottom: 15px;
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var accordions = document.getElementsByClassName("accordion");
+            
+            for (var i = 0; i < accordions.length; i++) {
+                accordions[i].addEventListener("click", function() {
+                    // Toggle between adding/removing the "active" class
+                    this.classList.toggle("active");
+
+                    // Toggle between hiding and showing the panel
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+
+<!-- Custom accordion -->
+<button class="accordion">Doctor of Philosophy Program in Clinical Epidemiology (International Program)</button>
+<div class="panel">
+    <!-- Content omitted for brevity -->
+  <p><strong>1. Program Title</strong></p>
+    <p>Doctor of Philosophy Program in Clinical Epidemiology (International Program)</p>
+    <p><strong>2. Name of Degree and Field of Study</strong></p>
+    <p>Full name: Doctor of Philosophy (Clinical Epidemiology)</p>
+    <p>Abbreviation: Ph.D. (Clinical. Epidemiology)</p>
+    <p><strong>3. Responsible Unit</strong></p>
+    <p>Instruction:    Department of Clinical Epidemiology and Biostatistics</p>
+    <p>                    Faculty of Medicine, Ramathibodi Hospital, Mahidol University</p>
+    <p>Graduation:    Faculty of Graduate Studies Mahidol University</p>
+    <p><strong>4. The Program&rsquo;s Philosophy and Objectives</strong></p>
+    <p><strong><em>4.1 Program Philosophy</em></strong></p>
+    <p>Doctor of Philosophy Program in Clinical Epidemiology (International Program), Faculty of Medicine Ramathibodi Hospital, Mahidol University aims to build up health care providers (e.g. medical doctors, pharmacists, dentists, and etcetera) who are able to process knowledge including Clinical Epidemiology, Biostatistics, Economics, and clinical research in applying to clinical practice. In addition, graduated health care providers should be able to produce good quality research that can answer health problems of our country and internationally with ethical manner.</p>
+    <p><strong><em>4.2 Program Objectives</em></strong></p>
+    <p>At the end of the course graduates will have knowledge and be able to:</p>
+    <p>(1)     Become a medical researcher and Clinical Epidemiologist applying good moral and ethics in doing research and using evidences.</p>
+    <p>(2)    Apply the principles of Clinical Epidemiology and Evidence Based Medicine to analyze and solve health problems. This will lead to develop a process of diagnosis, treatment and effective prevention of illness.</p>
+    <p>(3)    Produce good clinical research integrating in Clinical Epidemiology, Biostatistics, Clinical Economics and Health Social Sciences in planning research projects.</p>
+    <p>(4)    Build up medical research team capacity with effective management and interpersonal relationship for a research project.</p>
+    <p>(5)    Apply statistical modeling and information technology to research properly, as well as effectively disseminate research results.</p>
+    <p><strong><em>4.3 Program Learning Outcomes (PLOs)</em></strong></p>
+    <p>The PLOs have been clearly formulated and aligned according to the visions and missions of the Faculty of Medicine and Mahidol University. As for the University&rsquo;s and Faculty&rsquo;s visions and missions of being the world class university, excellence in health sciences, and a leader in national health advocacy, the graduates should possess the following characteristics:</p>
+    <p>(1)    Be able to integrate and apply knowledge in clinical epidemiology, Evidence-based Medicine (EBM), Biostatistics, Health Social Science, Health Economics, and IT in their clinical/public health practice</p>
+    <p>(2)    Be able to apply EBM skills* for various questions in routine clinical practice</p>
+    <p>(3)    Be able to perform advanced statistical analysis for various clinical and health science researches</p>
+    <p>(4)    Be able to develop research protocol in clinical and health science researches using various study designs</p>
+    <p>(5)    Be able to conduct research complying with international ethical standards and collaborate with research teams</p>
+    <p>(6)    Be able to disseminate/communicate research findings or evidences to public by apply IT</p>
+    <p><strong>5. Admission Requirements</strong></p>
+    <p><strong><em>5.1 Plan I (Research only)</em></strong></p>
+    <p>(1)    Graduated Doctor of Medicine, Pharmacy, Dentistry, other related disciplines and Graduated Master&rsquo;s degree (e.g. Clinical Epidemiology, Epidemiology, Biostatistics, Clinical Economics or other related disciplines) or graduated in medical specialty certificate. (Diploma of Fellowship of the Royal College of Physicians).</p>
+    <p>(2)    Grade point average ≥ 3.50.</p>
+    <p>(3)    Have at least 3 publications in peer-reviewed international journals, as the first or corresponding author.</p>
+    <p>(4)    English test score according to the requirement for English proficiency established by the graduate school of Mahidol University</p>
+    <p>(5)    If an applicant does not meet the above criteria, but has other suitable qualification and experience, s/he may be considered to apply for admission by the program committee.</p>
+    <p><strong><em>5.2 Plan II (Coursework and Research)</em></strong></p>
+    <p>(1)    Graduated Doctor of Medicine, Pharmacy, Dentistry, and other related disciplines.</p>
+    <p>(2)    Grade point average ≥ 3.50/4</p>
+    <p>(3)    English test score according to the requirement for English proficiency established by the graduate school of Mahidol University</p>
+    <p>(4)    If an applicant does not meet the above criteria but has other suitable qualifications and experience, s/he may be considered to apply for admission by the program committee.</p>
+    <p><strong>6 Application Procedure</strong></p>
+    <p>This is the application procedure:</p>
+    <p>(1) Please send e-copies of the following:</p>
+    <ul>
+      <li>
+        <p>Your curriculum vitae (CV),</p>
+      </li>
+      <li>
+        <p>Your academic certificates and transcripts,</p>
+      </li>
+      <li>
+        <p>Copies of certificates of international examinations in English IELTS Academic 6.0 (writing and speaking no less than 6.0) <strong><u>or</u></strong> TOEFL-IBT 79 (writing no less than 23 and speaking no less than 19) <strong><u>or</u></strong> MU GRAD PLUS 90 (writing no less than 23 and speaking no less than 12) which you have taken,</p>
+      </li>
+      <li>
+        <p>Brief outline of your proposed it is highly recommended to use our template : <a href="https://med.mahidol.ac.th/ceb/sites/default/files/public/doc/Templates/Research%20Outline.doc" target="_blank"><img alt="" src="https://med.mahidol.ac.th/ceb/sites/default/files/public/img/icon/doc.png" title="Research Outline"></a> ,</p>
+      </li>
+      <li>
+        <p>At least two reference letters,</p>
+      </li>
+      <li>
+        <p>Details of any publications in international journals in <u><strong>English</strong></u>,</p>
+      </li>
+      <li>
+        <p>Details of any research experience which have been published in international peer-reviewed journals.</p>
+      </li>
+    </ul>
+    <p>There is no need to submit all prerequisite documents at once. However, should any applicant have alternative documents, which are not aligned with the requirements above.</p>
+    <p>(2) Please go to the Faculty of Graduate Studies website <a href="http://www.grad.mahidol.ac.th/en/prospective-students/">http://www.grad.mahidol.ac.th/en/ </a>to read general information about application and then go to <a href="http://www.grad.mahidol.ac.th/en/prospective-students/view.php?id=2224D02G">http://www.grad.mahidol.ac.th/en/prospective-</a> <a href="http://www.grad.mahidol.ac.th/en/prospective-students/view.php?id=2224D02G">students/view.php?id=2224D02G </a>to read about our program and then proceed to online application <a href="http://www.grad.mahidol.ac.th/en/prospective-students/">http://www.grad.mahidol.ac.th/en/prospective-students/ </a>for which you will need to send <u><strong>hard copies</strong></u> of the above documents to the Faculty of Graduate Studies. Please apply on-line as soon as possible. There will be a small fee (<u><strong>500 THB</strong></u>) for application (<u><strong>Non-refundable</strong></u>). Please be careful to choose our program during application - International Ph.D. in Clinical Epidemiology at the Faculty of Medicine Ramathibodi Hospital program code 224D02G. Kindly inform us promptly should you experience any problems with the online application process.</p>
+    <p>(3) After the department reviews applicant's documents and should he/she be selected for the next stage, the department will arrange an interview <u><strong>in person for local applicants</strong></u> or <strong><u>through Skype or Zoom for international applicants</u></strong>.</p>
+    <p><strong>7. Method for selecting students</strong></p>
+    <p>Our program recruits national and international students from various countries such as ASEAN, Asia, Africa, and etcetera. Students must have obtained at least 2 years clinical experience in a health care setting to apply for our program in addition to having suitable qualifications.</p>
+    <p><strong>8. Academic System</strong></p>
+    <p><strong><em>8.1 Study calendar</em></strong></p>
+    <p>There are 3 semesters open for new admissions. Please not that students are expected to continue their research during the breaks between semesters.</p>
+    <p><strong>     Semester 1</strong>: Opens from Early August until the end of November.</p>
+    <p><strong>     Semester 2</strong>: Opens from early January until the end of April.</p>
+    <p><strong>     Semester 3</strong>: Opens from eary May until the end of August.</p>
+    <p><strong><em>8.2 Credit assignment</em></strong></p>
+    <p>The number of credits is equivalent to:</p>
+    <p>  8.2.1 Lecture or discussion: 15 hours per semester equals 1 credit hour</p>
+    <p>  8.2.2 Self-study: 30 hours per semester equals 1 credit hour</p>
+    <p>  8.2.3 Thesis research: 30 hours per semester equals 1 credit hour</p>
+    <p><strong>9. Language of study and research</strong></p>
+    <p>International English shall be compiled in classroom study, research, meetings, modules, journal clubs, conferences, and all program processes and documents.</p>
+    <p><strong>10. Duration of study</strong></p>
+    <p>Plan I: Completion of study must take<u><strong> no more than 5 academic years</strong></u>.</p>
+    <p>Plan II: Completion of study must take <u><strong>no more than 8 academic years</strong></u>.</p>
+    <p><strong>11. Registration</strong></p>
+    <p>All students are required to be registered as full-time students every semester. Where any students who have special circumstances they may drop a semester with the permission of the program committee and the Faculty of Graduate Studies.</p>
+    <p><strong>12. Program Structure</strong></p>
+    <p><strong><em>12.1 The number of credits required for the program not less than:</em></strong></p>
+    <ul>
+      <li>
+        <p>Graduates with a master degree or equivalent enrol to a doctoral degree not less than 48 total credits are required.</p>
+      </li>
+      <li>
+        <p>Graduates with a bachelor degree enrol to a doctoral degree that requires at least 72 credits.</p>
+      </li>
+    </ul>
+    <p><strong><em>12.2 Curriculum Structure:</em></strong></p>
+    <p>The program is set according to the Ministry of Education Announcement titled Standard Criteria for Graduate Studies 2015. Doctor of Philosophy Program which has plan I and Plan II as follows:</p>
+    <table border="0" cellpadding="1" cellspacing="1">
+      <tbody>
+        <tr>
+          <td><p> </p></td>
+          <td><p><strong>Plan I</strong></p></td>
+          <td><p><strong>Plan II</strong></p></td>
+        </tr>
+        <tr>
+          <td><p>(1) Required course</p></td>
+          <td><p>-*</p></td>
+          <td><p>23 credits</p></td>
+        </tr>
+        <tr>
+          <td><p>(2) Elective course not less than</p></td>
+          <td><p>-</p></td>
+          <td><p> 4 credits</p></td>
+        </tr>
+        <tr>
+          <td><p>(3) Dissertation</p></td>
+          <td><p>48 credits</p></td>
+          <td><p>48 credits</p></td>
+        </tr>
+        <tr>
+          <td><p><strong>Total number of credit not less than</strong></p></td>
+          <td><p><strong>48 credits</strong></p></td>
+          <td><p><strong>75 credits</strong></p></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>*Extra credits for plan I are required based on consideration by program.</p>
+    <p><strong><em>12.3 Course requirements</em></strong></p>
+    <p><strong>     (1) Required subjects (23 Credits)</strong>           Credits (Lecture-Practice- Self-study)</p>
+    <p>RACE 611 Clinical Epidemiology and Evidence-Based Medicine           3(1-4-4)</p>
+    <p>RACE 622 Study Designs and Measurements in Clinical Epidemiology 3(2-2-5)</p>
+    <p>RACE 603 Research Protocol Design                                               2(1-2-3)</p>
+    <p>RACE 624 Research Informatics and Data management                    3(2-2-5)</p>
+    <p>RACE 625 Medical Statistics in Clinical Research                               3(2-2-5)</p>
+    <p>RACE 626 Advanced Analysis in Medical Research                            3(2-2-5)</p>
+    <p>RACE 607 Clinical Economics                                                         3(2-2-5)</p>
+    <p>RACE 618 Systematic Review &amp; Meta-Analysis                                 3(1-4-4)</p>
+    <p><strong>     (2) Elective course (not less than 4 Credits)</strong></p>
+    <p>RACE 608 Social Science in Clinical Practice and Research                 2(2-0-4)</p>
+    <p>RACE 617 Randomized Controlled Trial                                           2(1-2-3)</p>
+    <p>Elective Courses are in addition to the above course requirements. Students can enroll for other courses, offered by the Faculty of Graduate Studies of Mahidol University, or from other universities according to their interests, and the program committee, or advisors see fit.</p>
+    <p><strong>     (3) Dissertation</strong></p>
+    <p>     (1) Plan I: Research only</p>
+    <p>          For graduates with a master&rsquo;s degree admission to doctor degree</p>
+    <p>          RACE 898 Dissertation                                                      48(0-192-0)</p>
+    <p>     (2) Plan II: Coursework and Research</p>
+    <p>          For graduates with a bachelor degree admission to doctor degree</p>
+    <p>          RACE 799 Dissertation                                                      48(0-192-0)</p>
+    <p><strong><em>12.4 Course Code Explanation</em></strong></p>
+    <p>Four main alphabets are defined as follows:</p>
+    <p>The first two alphabets refer to the faculty responsible for teaching.</p>
+    <p>RA       means        The Faculty of Medicine Ramathibodi Hospital</p>
+    <p>The last two alphabets describe the program responsible for teaching.</p>
+    <p>CE       means         Clinical Epidemiology</p>
+    <p>3 digit numbers 5XX identify the subject coding given by Faculty of Graduate Studies.</p>
+    <p><strong><em>12.5 Study Plan</em></strong></p>
+    <p>     (A) Plan I: Research Only</p>
+    <p><img alt="" src="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/img/phd/Plan%20I.png"></p>
+    <p>     (B) Plan II: Coursework and Research</p>
+    <p><img alt="" src="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/img/phd/Plan%20II.png"></p>
+    <p><strong>13. Criteria for Student Assessment and Graduation</strong></p>
+    <p>Regulations or criteria for the grading system: Evaluation and grading conform to the regulations of Mahidol University and the Faculty of Graduate Studies.</p>
+    <p><strong><em>13.1 Verification Process for Student&rsquo;s Achievement</em></strong></p>
+    <p>(1)    In the course, students evaluate the way they are taught and are examined. The Program Committee considers that the quality of the evaluation used, is in line with the objectives of the Course</p>
+    <p>(2)    In the course, students learn how to evaluate how other students present oral assignments. Assessment and learning outcomes will be settled in the form of consensus and the decision is effective.</p>
+    <p>(3)    For the evaluation of the method of learning, responsible faculty define indicators for the evaluation of each piece of work clearly.</p>
+    <p><strong><em>13.2 Graduation Requirements</em></strong></p>
+    <p><strong>(A) Plan I: Research only</strong></p>
+    <p>     (1)    Follow the study plan for timely completion</p>
+    <p>     (2)    The total number of credits required throughout the course for a Ph.D. dissertation is not less than 48 credits</p>
+    <p>     (3)    Must pass the English proficiency examination for graduates of Mahidol University or equivalent IELTS / TOEFL score</p>
+    <p>     (4)    Must pass the qualifying examination for graduates of Mahidol University</p>
+    <p>     (5)    Must pass defending dissertation and submit dissertation following the regulations of the Faculty of Graduate Studies</p>
+    <p>     (6)    Students must participate in skill development activities of the Graduate Studies, Mahidol University</p>
+    <p>     (7)    Portfolio or part of the dissertation must have been published or accepted for publication in international peer-reviewed journals by at least 2 manuscripts following the Faculty of Graduate Studies regulation.</p>
+    <p><strong>(B) Plan II: Coursework and Research</strong></p>
+    <p>     (1)    Follow the study plan for timely completion</p>
+    <p>     (2)    Subjects studied according to the structure of the coursework for not less than 27 credits and 48 credits for dissertation, with minimum total of 75 credits and must have a minimum cumulative grade point average of 3.00</p>
+    <p>     (3)    Must pass the English proficiency examination for graduates of Mahidol University or IELTS / TOEFL equivalent</p>
+    <p>     (4)    Must pass the qualifying examination for graduates of Mahidol University</p>
+    <p>     (5)    Must pass defending dissertation and submit dissertation following the regulations of the Faculty of Graduate Studies</p>
+    <p>     (6)    Students must participate in skill development activities of the Graduate Studies, Mahidol University</p>
+    <p>     (7)    Portfolio or part of the Dissertation must have been published or accepted for publication in an international peer-reviewed journal by at least 1 manuscripts following the Faculty of Graduate Studies regulation.</p>
+    <p><strong>14. Library</strong></p>
+    <p>On the second floor of the Medication and Education Laboratory Centre there is a well-equipped library of traditional and e-materials representing leading textbooks and journals in appropriate fields of study.</p>
+    <p><strong>15. Qualifying Examination</strong></p>
+    <p>   15.1  Before taking the Qualifying Examination students must have satisfied the English requirement of the Faculty of Graduate Studies.</p>
+    <p>   15.2  Before taking the Qualifying Examination Plan II students must have completed all coursework with no individual subject less than grade B.</p>
+    <p>   15.3  The Qualifying Examination has the following structure:</p>
+    <table border="1" cellpadding="1" cellspacing="1">
+      <tbody>
+        <tr>
+          <td><p>Oral examination</p></td>
+          <td><p>Part I: Study Design and Evidence-based Medicine</p>
+            <p>Part II: Biostatistics</p></td>
+        </tr>
+        <tr>
+          <td><p>Written examination</p></td>
+          <td><p>Study Design, Evidence-based Medicine and Biostatistics</p></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>   15.4  A student failing any part may retake that part not more than two times.</p>
+    <p><strong>16. Research Proposal Defense</strong></p>
+    <p>   16.1  Before taking the Qualifying Examination students must have satisfied the English requirement of the Faculty of Graduate Studies.</p>
+    <p>   16.2  To proceed to Research Proposal Defense a student must have successfully defended their research topic.</p>
+    <p>   16.3  The program will set up a Research Proposal Defense Committee with approval from the Faculty of Graduate Studies.</p>
+    <p>   16.4  The program will set the arrangements for the Research Proposal Defense and announce.</p>
+    <p>   16.5  After successful Research Proposal Defense a student may register their Thesis.</p>
+    <p><strong>17. Thesis Defense</strong></p>
+    <p>   17.1  Before taking the Qualifying Examination students must have satisfied the English requirement of the Faculty of Graduate Studies.</p>
+    <p>   17.2  The program will set the arrangements for the Thesis Defense and announce.</p>
+    <p>   17.3  After successful oral defense of their Thesis if the Thesis needs revision the Thesis Defense Committee will set the time allowed between 30 to 90 days for the revision to complete and submit to the Faculty of Graduate Studies.</p>
+    <p><strong>18. Manuscript</strong></p>
+    <p>   18.1  Before a student can graduate they must have obtained 2-4 manuscripts published in approved international peer-reviewed journals as corresponding or first author.</p>
+    <p>   18.2  Typically at least one of these manuscripts will be from their Systematic Review and Meta-analysis and at least one from their Thesis.</p>
+    <p><strong>19. Career Potential of Graduates</strong></p>
+    <p>At the end of the course graduates will have knowledge and be able to:</p>
+    <p> <strong>  19.1  Plan I (Research Only)</strong></p>
+    <p>     (1) Become a medical researcher applying good moral and ethics in conducting research and evaluating evidence</p>
+    <p>     (2) Apply the principles of Clinical Epidemiology and Evidence-based Medicine to analyze and solve health problems. This will lead to develop a process of diagnosis, treatment and effective prevention of illness.</p>
+    <p>     (3)    Produce good clinical research integrating in Clinical Epidemiology, Biostatistics, Clinical Economics and Health Social Sciences in planning and conducting research projects.</p>
+    <p>      (4)    Build up medical research team capacity with effective management of a research project.</p>
+    <p>     (5)    Apply statistical modelling and information technology to research systematically, as well as effectively disseminate research results.</p>
+    <p>     (5)    Use the principles of Clinical Epidemiology and Evidence-based Medicine to analyze and solve health problems. This will lead to develop a process of diagnosis, treatment and effective prevention of illness.</p>
+    <p><strong>   19.2  Plan II: Coursework and Research</strong></p>
+    <p>     (1) Specialize in teaching Clinical Epidemiology, Biostatistics, Clinical Economics, and etcetera.</p>
+    <p>     (2) Become a medical researcher applying good morals and ethics in conducting research and evaluating evidence.</p>
+    <p>     (3) Apply the principles of Clinical Epidemiology and Evidence-based Medicine to analyze and solve health problems, which will lead to development of a process of diagnosis, treatment and effective prevention of illness.</p>
+    <p>    (4) Produce good clinical research integrating Clinical Epidemiology, Biostatistics, Clinical Economics and Health Social Sciences in planning and conducting research projects.</p>
+    <p>    (5) Build up medical research team capacity with effective management and interpersonal relationships to lead a research project</p>
+    <p>    (6) Apply statistical modelling and information technology to research systematically, as well as effectively disseminate research results.</p>
+    <p>    Ph.D. Fee:  <a href="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/pdf/ACADEMIC/2024/Tution%20fee%20for%20Ph.D.Epi%202024%20Plan%20II%20%285%20Years%29_21-8-24.pdf" target="_blank"><img alt="" src="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/img/icon/pdf.png" title="Ph.D. Fee 2024"></a></p>
+</div>
+
+<button class="accordion">Ph.D. Course Offerings and Requirements</button>
+<div class="panel">
+    <!-- Content omitted for brevity -->
+  <p><strong>Ph.D. Course Offerings and Requirements</strong></p>
+    <p><strong>Required Courses</strong></p>
+    <p>Credits (Theory - Practice - Self-study)</p>
+    <p>RACE 611 Clinical Epidemiology and Evidence-Based Medicine           3(1-4-4)</p>
+    <p>Formulate clinical question, searching evidenced, Evidenced-based medicine, critical appraisal of diagnosis study, therapeutic study, risk/harm study prognosis, systematic review and clinical practice guideline</p>
+    <p>RACE  622  Study Designs and Measurements in Clinical Epidemiology           3(2-2-5) </p>
+    <p>Epidemiological measurements; health indicators; bias and interaction; study designs: observational studies; case-control; cross-sectional, cohort; health system research and evaluation</p>
+    <p>RACE 603 Research Protocol Design 2(1-2-3) </p>
+    <p>Research proposal writing; literature review; research question; selection of studied population; measurement; statistical analysis plan; sample size estimation; research proposal presentation</p>
+    <p>RACE  624  Research Informatics and Data Management            3(2-2-5)</p>
+    <p>Research informatics; advanced literature searching; storage and organization of medical information; data  management;  designing data collection form;  construct databases; data quality control; data validation; database dictionary; big data management and analysis</p>
+    <p>RACE  625  Medical Statistics in Clinical Research           3(2-2-5) </p>
+    <p>Statistical inference for continuous data: comparison of two means, analysis of variance (ANOVA), correlation coefficient and linear regression; statistical inference for categorical data: Chi-square test, Fisher exact test, odds ratio, risk ratio, and sample size estimation </p>
+    <p>RACE  626  Advanced Analysis in Clinical Research           3(2-2-5)</p>
+    <p>Real research data analysis using Logistic regression analysis, multi-logit regression poisson regression, survival analysis, COX regression analysis, longitudinal data analysis; interpretation, writing report</p>
+    <p>RACE 607 Clinical Economics           3(2-2-5)</p>
+    <p>Principles of clinical economics, cost effectiveness, cost utilization, analysis of clinical decision making, critical appraisal of clinical evidence</p>
+    <p>RACE 618 Systematic Review &amp; Meta-Analysis            3(1-4-4)</p>
+    <p>Review methodology: formulation of research questions, identify relevant studies, selection of studies (inclusion and exclusion criteria), data extraction, risk of bias assessment; meta-analysis for continuous and dichotomous outcomes, heterogeneity, and publication bias; network meta-analysis, meta-analysis in genetic association study; preferred items for reporting systematic review and meta - analysis (PRISMA)</p>
+    <p><strong>Elective Courses</strong></p>
+    <p>Credits (Theory - Practice - Self-study)</p>
+    <p>RACE 608 Social Science in Clinical Practice and Research          2(2-0-4)</p>
+    <p>Theoretical models in health social science research, health care decision, adherence to medical treatment, medical service, treatment-seeking behavior, patient- physician relationship, human behavioral change, qualitative research</p>
+    <p>RACE 617 Randomized Controlled Trial           2(1-2-3) </p>
+    <p>Research methods, eligibility criteria, intervention, comparator, randomization Method, allocation concealment, blinding or masking, outcome assessments, management   of large randomize-controlled trial, consolidated standards of reporting trails (CONSORT)</p>
+    <p><strong>Dissertation</strong></p>
+    <p>Credits (Theory - Practice - Self-study)</p>
+    <p><strong>Plan I: Research only</strong></p>
+    <p>RACE 898 Dissertation              48(0-192-0)</p>
+    <p>Following Medical and Health Social Sciences research proposal; conducting  research with concern for research ethics; data collection, analysis, interpretation of results and reporting of results in terms of thesis; presenting and publishing research in international peer-reviewed journals</p>
+    <p><strong>Plan II: Coursework and Research</strong></p>
+    <p>RACE 799 Dissertation              48(0-192-0)</p>
+    <p>Following Medical and Health Social Sciences research proposal; conducting  research with concern for research ethics; data collection, analysis, interpretation of results and reporting of results in terms of thesis; presenting and publishing research in international peer-reviewed journals</p>
+</div>
+
+<button class="accordion">Master of Science in Medical Epidemiology (International Program)</button>
+<div class="panel">
+    <!-- Content omitted for brevity -->
+  <p><strong>1. Program Title</strong></p>
+    <p>Master of Science Program in Medical Epidemiology</p>
+    <p><strong>2. Name of Degree</strong></p>
+    <p>a.    Full name: Master of Science (Medical Epidemiology)</p>
+    <p>b.    Abbreviation: M.Sc. (Medical Epidemiology)</p>
+    <p><strong>3. Responsible Unit</strong></p>
+    <p>a.    Department of Clinical Epidemiology and Biostatistics, Research Centre, Faculty of Medicine, Ramathibodi Hospital, Mahidol University</p>
+    <p>b.    Faculty of Graduate Studies, Mahidol University</p>
+    <p><strong>4. The Program&rsquo;s Philosophy and Objectives</strong></p>
+    <p><em>Program Philosophy</em></p>
+    <p>The Master of Science program in Medical Epidemiology will prepare students to integrate medical epidemiology, biostatistics, medical economics, and medical research with patient care. The Program will focus on a critical evaluation of diagnostics, prevention and management, which are the basic principles of evidence-based medicine. It will provide students with a broad perspective and advanced skills for in-depth exploration of research methodology. Students will be challenged to create innovative research and evaluation methods, which will lead to not only an improved understanding of health and disease, but ultimately toward an overall contribution to enhanced health service systems as well.</p>
+    <p><em>Program Objectives</em></p>
+    <p>a.     Appropriately teach, advise and disseminate the principles of Medical Epidemiology while enthusiastically aspiring to help in the reduction of the world disease burden.</p>
+    <p>b.    Encourage and effectively integrate Medical Epidemiology and Evidence-based Medicine into the everyday practice of individual patient care as well as the broader based health care systems.</p>
+    <p>c.    Produce good medical research using Medical Epidemiology tools, while further advancing ongoing medical education of the highest ethical standards in Medical Epidemiology.</p>
+    <p><strong>5. Admission Requirements</strong></p>
+    <ul>
+      <li>
+        <p>Candidate must hold an undergraduate degree in medicine or in a similar health care field.</p>
+      </li>
+    </ul>
+    <p> (Exceptions to these requirements will be made by the Program Committee and the Dean of the Faculty of Graduate Studies.)</p>
+    <p><strong>6. Application Procedure:</strong></p>
+    <p>This is the application procedure:</p>
+    <p>1) Please send us e-copies of the following:</p>
+    <ul>
+      <li>
+        <p>Your curriculum vitae (CV),</p>
+      </li>
+      <li>
+        <p>Your academic certificates and transcripts,</p>
+      </li>
+      <li>
+        <p>Copies of certificates of international examinations in English IELTS Academic 5.0 (writing and speaking no less than 5.0) <strong><u>or</u></strong> TOEFL-IBT 64 (writing no less than 17 and speaking no less than 15) <strong><u>or</u></strong> MU GRAD PLUS 70 (writing no less than 10 and speaking no less than 10) which you have taken,</p>
+      </li>
+      <li>
+        <p>Brief outline of your proposed research, it is highly recommended to use our template: <a href="https://med.mahidol.ac.th/ceb/sites/default/files/public/doc/Templates/Research%20Outline.doc" target="_blank"><img alt="" src="https://med.mahidol.ac.th/ceb/sites/default/files/public/img/icon/doc.png" title="Research Outline"></a></p>
+      </li>
+      <li>
+        <p>At least two reference letters</p>
+      </li>
+      <li>
+        <p>Details of any publications in international journals in English</p>
+      </li>
+      <li>
+        <p>Details of any research experience which you have</p>
+      </li>
+    </ul>
+    <p>There is no need to submit all prerequisite documents at once. However, should any applicant have alternative documents which are not aligned with the requirements above. Please let us know.</p>
+    <p>2) Please go to the Faculty of Graduate Studies website <a href="http://www.grad.mahidol.ac.th/en/prospective-students/" target="_blank">http://www.grad.mahidol.ac.th/en/</a> to read general information about application and then go to <a href="http://www.grad.mahidol.ac.th/en/prospective-students/view.php?id=2224D02G" target="_blank">http://www.grad.mahidol.ac.th/en/prospective-students/view.php?id=5901MG</a> to read about our program and then proceed to online application  <a href="http://www.grad.mahidol.ac.th/grad/admission/online/index_EN/page.php?page=apply/applyDetail.php&&tab=3" target="_blank">http://www.grad.mahidol.ac.th/en/prospective-students/</a> for which you will need to send <u><strong>hard copies</strong></u> to the Faculty of Graduate Studies. Please apply on-line as soon as possible. There will be a small fee (<u><strong>500 THB</strong></u>) for application (<u><strong>Non-refundable</strong></u>). Please be careful to choose our program during application - International M.Sc. in Medical Epidemiology at the Faculty of Medicine Ramathibodi Hospital program code 5901M01G. Kindly inform us promptly should you experience any problems with the online application process. </p>
+    <p>3) After the department reviews your documents and should he/she be selected for the next stage. The department will arrange interview <u><strong>in person for local applicants</strong></u> or <u><strong>through Skype or ZOOM for international applicants</strong></u>.</p>
+    <p><strong>7. Selection Method</strong></p>
+    <p>This is the process:</p>
+    <p>1) Selection committee review applicant's information.</p>
+    <p>2) Selection committee select applicants for interview.</p>
+    <p>3) Interview in person or by Skype/Zoom.</p>
+    <p>4) Notification of result</p>
+    <ul>
+      <li>
+        <p>Accept / Accept with conditions: Applicant receives a formal acceptance from the Faculty of Graduate Studies which they accept or deny.</p>
+      </li>
+      <li>
+        <p>Pending: Applicant is still under consideration and a decision will informed as soon as possible.</p>
+      </li>
+      <li>
+        <p>Reject: Applicant is not accepted at this time, but may re-apply in the future.</p>
+      </li>
+    </ul>
+    <p><strong>8. Academic System</strong></p>
+    <p>Semester system</p>
+    <p><em>Academic credits:</em></p>
+    <p>The number of academic credits assigned to each subject is as follows:</p>
+    <ul>
+      <li>
+        <p>Lecture or discussion periods totaling 15 hours per semester - 1 Credit</p>
+      </li>
+      <li>
+        <p>Laboratory or practice periods totaling 30 hours per semester - 1 Credit</p>
+      </li>
+      <li>
+        <p>Dissertation preparation totaling 45 hours per semester - 1 credit.</p>
+      </li>
+    </ul>
+    <p><strong>9. Language</strong></p>
+    <p>English will be used for instruction, written assignments, as well as the writing of dissertation and manuscript.</p>
+    <p><strong>10. Duration of Study</strong></p>
+    <p>Completion of study must take no more than 5 academic years.<br>
+    </p>
+    <p><strong>11. Registration</strong></p>
+    <ul>
+      <li>
+        <p>Candidates are enrolled to the following:</p>
+        <ul>
+          <li>
+            <p>Coursework which takes about one year full time</p>
+          </li>
+          <li>
+            <p>Research study which requires two to three days full time per week throughout </p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p><strong>12. Evaluation and Graduation Requirements</strong></p>
+    <p><em>Evaluation</em></p>
+    <p>Student evaluations are in accordance with the rules and regulations of Mahidol University. (See details: <a href="http://www.grad.mahidol.ac.th/" target="_blank">www.grad.mahidol.ac.th</a>)</p>
+    <p><em>Graduation Requirements (See details </em><a href="http://www.grad.mahidol.ac.th/en/prospective-students/general-information.php" target="_blank">http://www.grad.mahidol.ac.th/en/prospective-students/general-information.php</a>)</p>
+    <p>Students must meet the following requirements:</p>
+    <ul>
+      <li>
+        <p>Pass an English proficiency Examination.</p>
+      </li>
+      <li>
+        <p>Complete course work with at least 24 credits with GPA not less than 3.00.</p>
+      </li>
+      <li>
+        <p>Complete a written dissertation and pass the oral defense required for graduation according to the regulations of the Faculty of Graduate Studies, Mahidol University.</p>
+      </li>
+      <li>
+        <p>Publish at least one manuscripts related to his or her dissertation in an internationally peer-reviewed journal</p>
+      </li>
+    </ul>
+    <p><strong>13. Scholarships</strong></p>
+    <p>Currently we have had World Health Organisation and Mahidol Norway Capacity Building for ASEAN scholarhips students on our program. Students wishing to join our program with a scholarship should complete the application process above first, and if successful, obtain a offer of acceptance. Then potential scholarship students should apply for scholarships. Funding organisations are more likely to award scholarships to students who have shown their ability by already passing the application process. Within Mahidol University the Faculty of Graduate Studies have <a href="http://www.grad.mahidol.ac.th/en/scholarships/">scholarships</a> for both new entry students and students who have already passed coursework and qualifying examination and are ready to conduct research. (See details: <a href="http://www.grad.mahidol.ac.th/en/scholarships/">http://www.grad.mahidol.ac.th/en/scholarships/</a>) Some scholarships are full scholarships and some are partial scholarships according to the funding organisation. Potential scholarship students should note that scholarships after announcement have a short application period, so students desiring scholarships should respond quickly.   </p>
+    <p>M.Sc Fees :  <a href="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/pdf/ACADEMIC/2024/Tution%20fee%20for%20M.Sc.Epi%202024%2021-8-24.pdf" target="_blank"><img alt="" src="https://med.mahidol.ac.th/ceb/sites/default/files/public/img/icon/pdf.png" title="M.Sc. Fees 2024"></a></p>
+</div>
+
+<button class="accordion">M.Sc. Course Offerings and Requirements</button>
+<div class="panel">
+    <!-- Content omitted for brevity -->
+  <p><strong>M.Sc. Course Offerings and Requirements</strong></p>
+    <p><strong>(1) Core courses</strong></p>
+    <p>Credits (Lecture-Practice-Self-study)<br>
+      <br>
+      RACE 611    Clinical Epidemiology and Evidence-Based Medicine    3(1-4-4)<br>
+      Formulate clinical question; searching evidenced; Evidenced-based medicine; critical appraisal of diagnosis study, therapeutic study, risk/harm study, prognosis study, systematic review, clinical practice guideline</p>
+    <p>RACE  622  Study Designs and Measurements in Clinical Epidemiology    3(2-2-5)</p>
+    <p>Epidemiological measurements; health indicators; bias and interaction; study designs, observational studies, case-control, cross-sectional, cohort; health system research and evaluation</p>
+    <p>RACE  625  Medical Statistics in Clinical Research    3(2-2-5)<br>
+      Statistical inference for continuous data; comparison of two means; analysis of  variance (ANOVA); correlation coefficient and linear regression; statistical inference for categorical data; Chi-square test, Fisher exact test; odds ratio, risk ratio; sample size estimation<br>
+    </p>
+    <p><strong>(2) Required course</strong><br>
+      RAME 607 Clinical Economics    2(1-2-3)<br>
+      Principles of  clinical  economics;  cost  effectiveness;  cost  utilization;  analysis  of clinical decision making</p>
+    <p>RAME 618 Systematic Review &amp; Meta-Analysis    2(1-2-3)<br>
+      Review methodology; formulation of research questions; identify relevant studies; selection of studies (inclusion and exclusion criteria); data extraction; risk of bias assessment; meta- analysis for continuous and dichotomous outcomes; heterogeneity and publication bias; network meta-analysis</p>
+    <p>RAME  624  Research Informatics and Data Management    2(1-2-3)</p>
+    <p>Research informatics; advanced literature searching; data management (design data collection form, data quality control, data validation); database and data dictionary</p>
+    <p>RACE 603    Research Protocol Design    2(1-2-3)<br>
+      Research proposal writing; literature review; research question; selection of studied population; measurement; statistical analysis plan; sample size estimation; research proposal presentation, ethics consideration</p>
+    <p>RACE 626  Advanced Analysis in Clinical Research    3(2-2-5)<br>
+      Real research data analysis using Logistic regression analysis; multi-logit regression poisson regression; survival analysis, COX regression analysis; longitudinal data analysis; interpretation and writing report</p>
+    <p>TMHG 517 Statistical Methods in Spatial Epidemiology    2(1-2-3)<br>
+      Spatial epidemiology and spatial analysis spatial sampling, cluster analysis, surface analysis, spatial autocorrelation and regression<br>
+      PHEP 603    Epidemiologic Study of Infectious Diseases    3(3-0-6)<br>
+      Concept and methods in epidemiologic study of infectious diseases; epidemiological analysis and outbreak investigation; construction and development of infectious diseases surveillance system; epidemiological study designs; basic mathematical model for disease outbreak; application of geographic information to epidemiology of infectious diseases; analysis and prediction of infectivity in community<br>
+      <br>
+      <strong>(3) Elective courses</strong><br>
+      RACE 608 Social Science in Clinical Practice and Research    2(2-0-4)<br>
+      Theoretical models in health social science research; health care decision; adherence to medical treatment; medical service; treatment-seeking behavior; patient- physician relationship; human behavioral change; qualitative research</p>
+    <p>RACE 617 Randomized Controlled Trial    2(1-2-3)<br>
+      Research methods; eligibility criteria; intervention; comparator; randomization Method; allocation concealment; blinding or masking; outcome assessments; management  of large randomize-controlled trial; consolidated standards of reporting trails (CONSORT)</p>
+    <p>TMHG 516 Application of Geographical Information System (GIS)    2(1-2-3) in Epidemiology of Tropical Diseases<br>
+      Disease Mapping of Tropical Diseases by Geographical Information System (GIS), Remote Sensing (RS), and Global Positioning System (GPS).<br>
+      PHEP 621    Seminar in Epidemiology I    2(2-0-4)<br>
+      Searching; presenting; discussion; critique of current researches on epidemiology in medicine and public health in aspects of research methodology; constructive advice to improve quality of articles in term of epidemiology and according to research ethics</p>
+    <p><strong>(4) Thesis</strong><br>
+      PHEP 698    Thesis    12(0-48-0)<br>
+      Identifying in Medical and Health Social Sciences research proposal; conducting research with concern of research ethics; data collection; analysis; interpretation of the result and report the result in terms of thesis; presenting and publishing research in the international peer-reviewed journals</p>
+    <p>RACE 698    Thesis    12(0-48-0)<br>
+      Identifying in Medical and Health Social Sciences research proposal; conducting research with concern of research ethics; data collection; analysis; interpretation of the result and report the result in terms of thesis; presenting and publishing research in the international peer-reviewed journals</p>
+    <p> TMHG 698    Thesis    12(0-48-0)<br>
+      Identifying in Medical and Health Social Sciences research proposal; conducting research with concern of research ethics; data collection; analysis; interpretation of the result and report the result in terms of thesis; presenting and publishing research in the international peer-reviewed journals</p>
+</div>
+
+<button class="accordion">Course Overview</button>
+<div class="panel">
+    <img alt="Course Overview 2023" src="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/img/ACADEMIC/2023/Course%20overview%202023.jpg" width="100%" height="auto">
+    <p><strong>Download Course Overview 2023:</strong> <a href="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/pdf/ACADEMIC/2023/Course%20overview%202023_0.pdf" target="_blank">
+        <img alt="Download PDF" src="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/img/icon/pdf.png"></a></p>
+</div>
+
+<button class="accordion">Course timetable</button>
+<div class="panel">
+    <p><strong>Course timetable</strong></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Topic</th>
+                <th>Timetable</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>RACE 622:</strong> Study Designs & Measurements in Clinical Epidemiology</td>
+                <td><a href="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/pdf/ACADEMIC/2024/RACE622/RACE%20622_2024_11-7-24.pdf" target="_blank"><img alt="Download PDF" src="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/img/icon/pdf.png"></a></td>
+            </tr>
+            <tr>
+                <td><strong>RACE 625:</strong> Medical Statistics in Clinical Research</td>
+                <td><a href="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/pdf/ACADEMIC/2024/RACE625/RACE%20625_2024.pdf" target="_blank"><img alt="Download PDF" src="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/img/icon/pdf.png"></a></td>
+            </tr>
+            <tr>
+                <td><strong>RACE 611:</strong> Clinical Epidemiology and Evidence-Based Medicine</td>
+                <td><a href="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/pdf/ACADEMIC/2024/RACE611/RACE%20611_2024_10-9-24.pdf" target="_blank"><img alt="Download PDF" src="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/img/icon/pdf.png"></a></td>
+            </tr>
+            <tr>
+                <td><strong>RACE 624/RAME 624:</strong> Research Informatics and Data Management</td>
+                <td><a href="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/pdf/ACADEMIC/2024/RACE624/RACE%20624_2024_10-9-24.pdf" target="_blank"><img alt="Download PDF" src="https://www.rama.mahidol.ac.th/ceb/sites/default/files/public/img/icon/pdf.png"></a></td>
+            </tr>
+			<tr>
+                <td><strong>RACE 608: </strong>Social Science in Clinical Practice and Research</td>
+                <td></td>
+            </tr>
+			<tr>
+                <td><strong>RACE 626: </strong>Advanced Statistical Analysis in Clinical Research</td>
+                <td></td>
+            </tr>
+			<tr>
+                <td><strong>RACE 603: </strong>Research Protocol Designs</td>
+                <td></td>
+            </tr>
+			<tr>
+                <td><strong>RACE 607/RAME 607: </strong>Clinical Economics</td>
+                <td></td>
+            </tr>
+			<tr>
+                <td><strong>RACE 617: </strong>Randomized Controlled Trials</td>
+                <td></td>
+            </tr>
+			<tr>
+                <td><strong>RACE 618/RAME 618: </strong>Systematic Review &amp; Meta - Analysis</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
